@@ -1,4 +1,5 @@
 import profileImg from '../assets/profile.jpg';
+import bgHome from '../assets/bghome.jpeg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -18,15 +19,24 @@ export default function Home() {
       id="home"
       className="relative flex flex-col justify-center items-center min-h-screen w-full overflow-hidden"
     >
+      {/* Background image */}
+      <img
+        src={bgHome}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
 
+      {/* Subtle dark overlay */}
+      <div className="absolute inset-0 bg-black/30 z-0"></div>
 
+      {/* Content */}
       <motion.div
         className="max-w-3xl mx-auto text-white flex flex-col items-center relative z-10"
         variants={container}
         initial="hidden"
         animate="visible"
       >
-        {/*img*/}
+        {/* Profile Image */}
         <motion.div
           className="w-40 h-40 rounded-full overflow-hidden shadow-xl ring-4 ring-blue-400 ring-offset-4 ring-offset-black mb-6 cursor-pointer"
           variants={item}
@@ -39,7 +49,7 @@ export default function Home() {
           />
         </motion.div>
 
-        
+   
         <motion.h1
           className="text-6xl font-extrabold mb-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-600 bg-clip-text text-transparent leading-tight cursor-pointer"
           title="Keshara Abeywickrama"
@@ -56,7 +66,7 @@ export default function Home() {
           IT Undergraduate
         </motion.p>
 
-       
+        {/* Welcome Text */}
         <motion.p
           className="mb-10 text-lg text-center max-w-lg text-gray-200"
           variants={item}
