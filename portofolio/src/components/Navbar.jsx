@@ -11,7 +11,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
   return (
     <nav className="bg-gray-100 dark:bg-gray-800 p-4 flex justify-between items-center shadow">
-      <div className="text-xl font-bold">PORTFOLIO</div>
+      <div className="text-xl font-bold"> Keshara Abeywickrama</div>
       <div className="space-x-6">
         {links.map(({ to, label }) => (
           <Link
@@ -34,3 +34,4 @@ export default function Navbar({ darkMode, setDarkMode }) {
     </nav>
   );
 }
+ 

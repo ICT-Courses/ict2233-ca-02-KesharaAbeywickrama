@@ -75,7 +75,7 @@ export default function Contact() {
         <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" className="hover:underline">
           GitHub
         </a>
-        <a href="mailto:your-email@example.com" className="hover:underline">
+        <a href="kesharaabeywickrama@gmail.com" className="hover:underline">
           Email
         </a>
       </div>
