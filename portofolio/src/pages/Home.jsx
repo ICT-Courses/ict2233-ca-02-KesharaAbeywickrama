@@ -26,10 +26,12 @@ export default function Home() {
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
 
-      {/* Subtle dark overlay */}
+      
+
       <div className="absolute inset-0 bg-black/30 z-0"></div>
 
       {/* Content */}
+
       <motion.div
         className="max-w-3xl mx-auto text-white flex flex-col items-center relative z-10"
         variants={container}
@@ -37,6 +39,7 @@ export default function Home() {
         animate="visible"
       >
         {/* Profile Image */}
+        
         <motion.div
           className="w-40 h-40 rounded-full overflow-hidden shadow-xl ring-4 ring-blue-400 ring-offset-4 ring-offset-black mb-6 cursor-pointer"
           variants={item}
@@ -67,6 +70,7 @@ export default function Home() {
         </motion.p>
 
         {/* Welcome Text */}
+
         <motion.p
           className="mb-10 text-lg text-center max-w-lg text-gray-200"
           variants={item}
@@ -77,6 +81,7 @@ export default function Home() {
         </motion.p>
 
         {/* Buttons */}
+
         <motion.div className="flex gap-6" variants={item}>
           <Link
             to="/projects"

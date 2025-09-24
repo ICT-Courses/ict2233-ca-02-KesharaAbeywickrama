@@ -2,6 +2,8 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard"; 
 import { motion } from "framer-motion";
 
+{/* projects */}
+
 const projects = [
   {
     title: "Healthcare Management System",

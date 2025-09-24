@@ -29,6 +29,8 @@ export default function About() {
         variants={item}
         initial="hidden"
         animate="visible"
+        whileHover={{ scale: 1.1, boxShadow: "0 15px 40px rgba(0,255,255,0.4)" }}
+        transition={{ type: "spring", stiffness: 300 }}
       >
         <img
           src={aboutImg}
@@ -38,20 +40,22 @@ export default function About() {
       </motion.div>
 
       <motion.h2
-        className="text-4xl font-bold mb-6 text-cyan-400"
+        className="text-4xl font-bold mb-6 text-cyan-400 cursor-pointer"
         variants={item}
         initial="hidden"
         animate="visible"
+        whileHover={{ scale: 1.05 }}
       >
         About Me
       </motion.h2>
 
       {/* intro */}
       <motion.p
-        className="text-lg leading-relaxed bg-white/10 p-4 rounded-lg shadow-md backdrop-blur-sm mb-10"
+        className="text-lg leading-relaxed bg-white/10 p-4 rounded-lg shadow-md backdrop-blur-sm mb-10 cursor-pointer"
         variants={item}
         initial="hidden"
         animate="visible"
+        whileHover={{ scale: 1.02 }}
       >
         Hello! I'm{" "}
         <span className="font-semibold text-cyan-300">Keshara Abeywickrama</span>
@@ -80,7 +84,9 @@ export default function About() {
         initial="hidden"
         animate="visible"
       >
-        <h3 className="text-2xl font-semibold mb-4 text-cyan-300">Skills</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-cyan-300 cursor-pointer">
+          Skills
+        </h3>
         <ul className="list-disc list-inside space-y-2">
           {[
             "Full-Stack Web Development (React.js, Node.js, Express.js, Firebase)",
@@ -107,7 +113,9 @@ export default function About() {
         initial="hidden"
         animate="visible"
       >
-        <h3 className="text-2xl font-semibold mb-4 text-cyan-300">Projects</h3>
+        <h3 className="text-2xl font-semibold mb-4 text-cyan-300 cursor-pointer">
+          Projects
+        </h3>
         <ul className="list-disc list-inside space-y-2">
           {[
             "Healthcare Management System (C# + WPF) – streamlined patient & doctor records",
@@ -134,9 +142,15 @@ export default function About() {
         initial="hidden"
         animate="visible"
       >
-        <h3 className="text-2xl font-semibold mb-6 text-cyan-300">Education</h3>
+        <h3 className="text-2xl font-semibold mb-6 text-cyan-300 cursor-pointer">
+          Education
+        </h3>
         <div className="relative border-l-2 border-cyan-400 pl-6 space-y-8">
-          <motion.div variants={item}>
+          <motion.div
+            variants={item}
+            whileHover={{ scale: 1.03 }}
+            className="cursor-pointer"
+          >
             <div className="absolute -left-3 top-1 w-6 h-6 bg-cyan-400 rounded-full"></div>
             <h4 className="text-lg font-bold">BSc (Hons) in Information Technology</h4>
             <p className="text-sm text-gray-400">
@@ -147,7 +161,11 @@ export default function About() {
             </p>
           </motion.div>
 
-          <motion.div variants={item}>
+          <motion.div
+            variants={item}
+            whileHover={{ scale: 1.03 }}
+            className="cursor-pointer"
+          >
             <div className="absolute -left-3 top-1 w-6 h-6 bg-cyan-400 rounded-full"></div>
             <h4 className="text-lg font-bold">Bachelor in Arts</h4>
             <p className="text-sm text-gray-400">2024 – 2025</p>
@@ -156,7 +174,11 @@ export default function About() {
             </p>
           </motion.div>
 
-          <motion.div variants={item}>
+          <motion.div
+            variants={item}
+            whileHover={{ scale: 1.03 }}
+            className="cursor-pointer"
+          >
             <div className="absolute -left-3 top-1 w-6 h-6 bg-cyan-400 rounded-full"></div>
             <h4 className="text-lg font-bold">Viharamahadevi Balika Vidyalaya, Kiribathgoda</h4>
             <p className="text-sm text-gray-400">2009 – 2023</p>
